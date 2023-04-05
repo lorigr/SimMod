@@ -1,0 +1,3 @@
+- implementare la parte di regeneration point
+
+- validazione

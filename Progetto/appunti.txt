@@ -1,0 +1,15 @@
+FAILED -> arrival [FATTO]
+
+REPAIRED -> departure su failed(coda) o faulty(coda) o serviced(coda) (dipende da dove provengo). I customer poi ritornano nella infinite service station -> schedulare un nuovo failure dopo tempo Z
+
+SERVICED -> departure sulla coda damaged e schedulare o DAMAGED o REPAIRED
+
+FAULTY-> departure su coda failed e schedulare una REPAIRED 
+
+DAMAGED_RAPAIR -> schedulare o un DAMAGED_SPAIR o SERVICED e departure da coda serviced o failed (dipende da dove provengo)
+
+DAMAGED_SPAIR->  departure su coda sparedParts e schedulare DAMAGED_REPAIR
+
+
+
+Per la priorità-> quando sono in una stazione controllo che ci sia l'altra coda piena, se è così faccio prima gli altri
