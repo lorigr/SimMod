@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 public class ComputationalAlgorithm {
 
+    //ciooo
+
     static final int DELAY = 0;
     static final int LD = 1;
     static final int Z = 2500;
