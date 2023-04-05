@@ -251,13 +251,14 @@ public class ValidationModel{
     public void simulate(int seed) {
         /* Simulation core */
         r.plantSeeds(seed); //planting the new seed
-        initialize();
+        initialize(); 
         while (!(halt)) 
             engine(); 
         
     }
+    
 
-    public void engine(){
+    public void engine(){ 
         int event_type;
         double  oldclock;
         double  interval;
@@ -282,13 +283,13 @@ public class ValidationModel{
         switch(event_type){
             case FAILED : test_fix(new_event); 
             break;
-            case REPAIRED : repaired(new_event); // sarebbe la departure di prima
+            case REPAIRED : repaired(new_event); 
             break;
             case SERVICED : test_fix(new_event); 
             break;
             case FAULTY : repair(new_event); 
             break;
-            case DAMAGED_REPAIR : repair(new_event);
+            case DAMAGED_REPAIR : repair(new_event); 
             break;
             case DAMAGED_SPARE : spare_parts(new_event);
             break; 
