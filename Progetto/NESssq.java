@@ -80,8 +80,6 @@ public class NESssq{
     int rep = 0;
     double rep_sum = 0;
 
-
-
     int job_number;    /* (progressive) Job identification number */
     int node_number;   /* progressive number used to identify the newly generated node*/
 
@@ -275,10 +273,8 @@ public class NESssq{
         clock = new_event.event.occur_time;
         interval=clock-oldclock;
         
-        if(nsys>0){
-            area = area + interval*nsys;
-            secondCustNum = secondCustNum + Math.pow(nsys, 2)*interval;
-            busy = busy+interval;
+        if(event_counter<30){
+            printState(new_event);
         }
 
         /* Identify and process current event */
@@ -299,6 +295,20 @@ public class NESssq{
             }
         event_counter++;
         lastclock = clock;
+    }
+
+    public void printState(node event){
+        System.out.println("--------------------------------------------------");
+        System.out.println("Event number: "+event_counter);
+        System.out.println("Event type: "+event.event.type);
+        System.out.println("Clock: "+clock);
+        System.out.println("Number of customer at Test/Fix station: "+nTestFix);
+        System.out.println("Number of customer at Test queue: "+nFailed);
+        System.out.println("Number of customer at Test queue:  "+nServiced);
+        System.out.println("Number of customer at Repair station: "+nRepair);
+        System.out.println("Number of customer at short rapair station: "+nFaulty);
+        System.out.println("Number of customer at long Repair station: "+nDamaged);
+        System.out.println("NUmber of customer at Spare Parts station: "+nSpare);
     }
 
     public void nextTextFix(){
