@@ -58,6 +58,7 @@ public class NESssq{
     double doubleBusy = 0;
     double sumWaiting = 0;
 
+    boolean printState = false;       /* print the trace of the simulation */
 
     boolean halt;            /* End of simulation flag */
     int nsys;                /* Number of customers in system */
@@ -253,6 +254,15 @@ public class NESssq{
     public void simulate(int seed) {
         /* Simulation core */
         r.plantSeeds(seed); //planting the new seed
+
+        System.out.print("Do you you want to print the state of the system after each regeneration cycle? (y/n)");
+        Scanner scan = new Scanner(System.in);
+        String answer = scan.nextLine();
+        if(answer.equals("y")){
+            printState = true;
+        }
+
+
         initialize();
         while (!(halt)) 
             engine(); 
@@ -262,7 +272,6 @@ public class NESssq{
     public void engine(){
         int event_type;
         double  oldclock;
-        double  interval;
         node new_event;
         
         /* Get the first event notice from Future Event List */
@@ -271,7 +280,6 @@ public class NESssq{
         oldclock = clock;
         /* update clock */
         clock = new_event.event.occur_time;
-        interval=clock-oldclock;
         
         if(event_counter<30){
             printState(new_event);
@@ -391,7 +399,14 @@ public class NESssq{
         left_limit = ((mean_cycle)-((tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count))));
         right_limit = ((mean_cycle)+((tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count))));
         precision = (tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count)*mean_cycle);
-        //System.out.println("left :"+left_limit+", right: "+right_limit+", interval: "+precision);
+
+        // test if char variabile print is 'y' or "n"
+        if(printState==true){
+            System.out.println("*************");
+            System.out.println("renegeration cycle nr: "+cycle_count);
+            System.out.println("left limit: "+left_limit+ " right limit: "+right_limit+ " precision: "+precision);
+        }
+        
         if(precision<=0.05){
             end(left_limit, right_limit, precision, cycle_count);
         } 
