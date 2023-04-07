@@ -485,7 +485,7 @@ public class NESssq{
             nTestFix--;
             if(item.event.previous_type==FAILED){
                 nFailed--;
-                item.event.damaged_time=clock;
+                //item.event.damaged_time=clock;
             } 
             else nServiced--;
             nextTextFix();
@@ -508,6 +508,7 @@ public class NESssq{
                 nFaulty++;
                 exit_faulty(item);
             }else if(item.event.type==DAMAGED_REPAIR){
+                item.event.damaged_time=clock;
                 nDamaged++;
                 exit_damaged(item);
             }
@@ -517,6 +518,7 @@ public class NESssq{
                 item.event.occur_time = 0.0;
                 enqueue(item, faulty);
             }else if(item.event.type==DAMAGED_REPAIR){
+                item.event.damaged_time=clock;
                 nDamaged++;
                 item.event.occur_time = 0.0;
                 enqueue(item, damaged);

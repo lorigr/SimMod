@@ -57,6 +57,7 @@ public class ValidationModel{
     double rep_sum = 0;
     int rep = 0;
 
+    double damaged_test = 0;
 
     boolean halt;            /* End of simulation flag */
     int nsys;                /* Number of customers in system */
@@ -90,7 +91,9 @@ public class ValidationModel{
 
     ArrayList<Double> damaged_times = new ArrayList<Double>();
     double sum_damaged = 0.0; // somma dei tempi damaged dentro un regeneration cycle
+    double sum_faulty = 0.0; // somma dei tempi faulty dentro un regeneration cycle
     int damaged_count=0; // quante volte è stato raccolto il dato del tempo damaged in un ciclo
+    int faulty_count=0; // quante volte è stato raccolto il dato del tempo faulty in un ciclo
     double sum_cycle=0.0; // somm delle medie dei tempi damaged tra i vari cicli
     double double_sum_cycle =0;
     int cycle_count=0; // quanti cicli sono stati fatti
@@ -102,6 +105,7 @@ public class ValidationModel{
     double secondDelay = 0;
     double doubleWaiting = 0;
 
+    boolean test = true;
 
     File   fp;
     Scanner scan;
@@ -148,6 +152,7 @@ public class ValidationModel{
         double service_time;
         int previous_type;
         double repair_time;
+        double faulty_time;
         double spare_parts_time;
         boolean tagged = false;
     }
@@ -251,6 +256,17 @@ public class ValidationModel{
     public void simulate(int seed) {
         /* Simulation core */
         r.plantSeeds(seed); //planting the new seed
+
+        System.out.print("Do you you want to collect statistics of damaged machines or faulty machines? (d/f) ");
+        Scanner scan = new Scanner(System.in);
+        String answer = scan.nextLine();
+        if(answer.equals("d")){
+            test = true;
+        }
+        if(answer.equals("f")){
+            test = false;
+        }
+
         initialize(); 
         while (!(halt)) 
             engine(); 
@@ -377,15 +393,25 @@ public class ValidationModel{
             } 
             //nextTextFix();
         }else if(item.event.previous_type==FAULTY){
+            faulty_count++;
+            item.event.faulty_time = clock - item.event.faulty_time;
+            sum_faulty+= item.event.faulty_time;
             nRepair--;
             nFaulty--;
             nextFaulty();
         }
         if(item.event.tagged==true){
             if(nFailed==0&&nDamaged==0){ // regeneration point founded
-                if(damaged_count!=0){
+                if(test==true){
+                    if(damaged_count!=0){
                     regenerate();
+                    }
+                }else{
+                    if(faulty_count!=0){
+                    regenerate();
+                    }
                 }
+                
             }
             return_node(item);
             planNewFailure(true);
@@ -399,11 +425,18 @@ public class ValidationModel{
         double left_limit, right_limit;
         double precision;
         double tstar = 1.645;
-        sum_cycle += sum_damaged/damaged_count; // media del tempo da trovare in un ciclo
-        double_sum_cycle += Math.pow(sum_damaged/damaged_count, 2);
+
+        if(test==true){
+            sum_cycle += sum_damaged/damaged_count; 
+            double_sum_cycle += Math.pow(sum_damaged/damaged_count, 2);
+        }else{
+            sum_cycle += sum_faulty/faulty_count;
+            double_sum_cycle += Math.pow(sum_faulty/faulty_count, 2);
+        }
+        
         cycle_count++;
 
-        System.out.println(rep_sum/rep);
+        //System.out.println(rep_sum/rep);
         if(cycle_count==1) return;
 
         double mean_cycle, double_mean_cycle;
@@ -415,7 +448,16 @@ public class ValidationModel{
         left_limit = ((mean_cycle)-((tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count))));
         right_limit = ((mean_cycle)+((tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count))));
         precision = (tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count)*mean_cycle);
-        //System.out.println("left :"+left_limit+", right: "+right_limit+", interval: "+precision);
+        //System.out.println("left limit: "+left_limit+" right limit: "+right_limit+" precision: "+precision);
+        if(test==false){
+            if(left_limit<=60&&right_limit>60){
+                damaged_test++;
+            }
+        }else{
+            if(left_limit<=460&&right_limit>460){
+                damaged_test++;
+            }
+        }
         if(precision<=0.05){
             end(left_limit, right_limit, precision, cycle_count);
         } 
@@ -494,7 +536,7 @@ public class ValidationModel{
             nTestFix--;
             if(item.event.previous_type==FAILED){
                 nFailed--;
-                item.event.damaged_time=clock;
+                //item.event.damaged_time=clock;
                 nextFailed();
             } 
             else{
@@ -517,6 +559,7 @@ public class ValidationModel{
         nRepair++;
 
         if(item.event.type==FAULTY){
+            item.event.faulty_time=clock;
             nFaulty++;
             if(nFaulty==1){
                 exit_faulty(item);
@@ -525,6 +568,7 @@ public class ValidationModel{
                 enqueue(item, faulty);
             }
         }else if(item.event.type==DAMAGED_REPAIR){
+            item.event.damaged_time=clock;
             nDamaged++;
             if(nDamaged==1){
                 exit_damaged(item);
@@ -665,11 +709,13 @@ public class ValidationModel{
         newNode.event.name = "J" + (job_number++);   
         newNode.event.type = FAILED;   
         newNode.event.previous_type = NO_EVENT;
-        newNode.event.damaged_time =0.0;   
+        newNode.event.damaged_time =0.0;  
+        newNode.event.faulty_time = 0.0; 
         newNode.event.occur_time = arrival_t;   
         newNode.event.arrival_time = arrival_t;   
         newNode.event.service_time = service_t;  
         newNode.event.repair_time = 0;
+        newNode.event.faulty_time=0;
         newNode.event.spare_parts_time = 0;     
         newNode.right = null;   
         newNode.left = null; 
@@ -680,12 +726,21 @@ public class ValidationModel{
     public void end(double left, double right, double precision, int count){
         /* manage END event */
         halt = true;
-        System.out.println("---------------------------------------------------------------");
-        System.out.println("Interval of average total repair time of damaged machines:\n");
-        System.out.println("left limit: "+left+", right limit: "+right);
-        System.out.println("reached precision: "+precision*100+"%, after: "+ count+" cycles");
-        System.out.println("---------------------------------------------------------------");
-
+        if(test==true){
+            System.out.println("---------------------------------------------------------------");
+            System.out.println("Interval of average total repair time of damaged machines:\n");
+            System.out.println("left limit: "+left+", right limit: "+right);
+            System.out.println("reached precision: "+precision*100+"%, after: "+ count+" cycles");
+            System.out.println("Percentage of times the theoretical value is within the calculated interval of the cycle "+(damaged_test/count)*100 + "%");
+            System.out.println("---------------------------------------------------------------");
+        }else{
+            System.out.println("---------------------------------------------------------------");
+            System.out.println("Interval of average total repair time of faulty machines:\n");
+            System.out.println("left limit: "+left+", right limit: "+right);
+            System.out.println("reached precision: "+precision*100+"%, after: "+ count+" cycles");
+            System.out.println("Percentage of times the theoretical value is within the calculated interval of the cycle "+(damaged_test/count)*100 + "%");
+            System.out.println("---------------------------------------------------------------");
+        }
     }
 
     /* =========================== */ 
@@ -743,6 +798,7 @@ public class ValidationModel{
         item.right=null;
         item.event.arrival_time=0;
         item.event.damaged_time=0;
+        item.event.faulty_time=0;
         item.event.name="";
         item.event.occur_time=0;
         item.event.service_time=0;
@@ -815,6 +871,7 @@ public class ValidationModel{
         p.right=null;
         p.event.arrival_time=0;
         p.event.damaged_time=0;
+        p.event.faulty_time=0;
         p.event.name="";
         p.event.occur_time=0;
         p.event.service_time=0;

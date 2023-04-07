@@ -403,7 +403,7 @@ public class ValidationModel{
         double_sum_cycle += Math.pow(sum_damaged/damaged_count, 2);
         cycle_count++;
 
-        System.out.println(rep_sum/rep);
+        //System.out.println(rep_sum/rep);
         if(cycle_count==1) return;
 
         double mean_cycle, double_mean_cycle;
@@ -494,7 +494,7 @@ public class ValidationModel{
             nTestFix--;
             if(item.event.previous_type==FAILED){
                 nFailed--;
-                item.event.damaged_time=clock;
+                //item.event.damaged_time=clock;
                 nextFailed();
             } 
             else{
@@ -521,6 +521,7 @@ public class ValidationModel{
                 nFaulty++;
                 exit_faulty(item);
             }else if(item.event.type==DAMAGED_REPAIR){
+                item.event.damaged_time=clock;
                 nDamaged++;
                 exit_damaged(item);
             }
@@ -530,6 +531,7 @@ public class ValidationModel{
                 item.event.occur_time = 0.0;
                 enqueue(item, faulty);
             }else if(item.event.type==DAMAGED_REPAIR){
+                item.event.damaged_time=clock;
                 nDamaged++;
                 item.event.occur_time = 0.0;
                 enqueue(item, damaged);
