@@ -74,7 +74,7 @@ public class ValidationModel{
     int event_counter;       /* Number events processed by the simulator*/
     int number_of_nodes;     /* Number of memory blocks used for the simulation */
     int return_number;       /* Number of nodes used by the simulator */
-    int NMax = 20;
+    int NMax = 3;
 
 
 
@@ -327,16 +327,16 @@ public class ValidationModel{
     }
 
     public void nextRepair(){
-        if(nFaulty>0){ // priorità ai faulty
-            //nFaulty--;
-            //nRepair--;
-            node next_job = dequeue(faulty);
-            exit_faulty(next_job);
-        }else if(nDamaged>0){
+        if(nDamaged>0){
             //nDamaged--;
             //nRepair--;
             node next_job = dequeue(damaged);
             exit_damaged(next_job);
+        }else if(nFaulty>0){ 
+            //nFaulty--;
+            //nRepair--;
+            node next_job = dequeue(faulty);
+            exit_faulty(next_job);
         }
     }
 
@@ -431,12 +431,12 @@ public class ValidationModel{
         if(test==1){
             //caso spare-parts
             item.event.type= DAMAGED_SPARE;
-            item.event.occur_time = clock + GetNegExp(200);
+            item.event.occur_time = clock + GetHyperExp(0.95, 0.05, 60, 2860);
             schedule(item);
         }else{
             // caso serviced
             item.event.type= SERVICED;
-            item.event.occur_time = clock + GetNegExp(200);
+            item.event.occur_time = clock + GetHyperExp(0.95, 0.05, 60, 2860);
             schedule(item);
         }
     }

@@ -320,6 +320,18 @@ public class NESssq{
     }
 
     public void nextTextFix(){
+        if(nServiced>0){ // priorità ai serviced
+            //nServiced--;
+            //nTestFix--;
+            node next_job =dequeue(serviced);
+            exit_serviced(next_job);
+        }else if(nFailed>0){ 
+            //nFailed--;
+            //nTestFix--;
+            node next_job = dequeue(failed);
+            exit_failed(next_job);
+        }
+        /* 
         if(nFailed>0){ // la precedenza è sui failed 
             //nFailed--;
             //nTestFix--;
@@ -330,10 +342,22 @@ public class NESssq{
             //nTestFix--;
             node next_job =dequeue(serviced);
             exit_serviced(next_job);
-        }
+        }*/
     }
 
     public void nextRepair(){
+        if(nDamaged>0){ // priorità ai damaged
+            //nDamaged--;
+            //nRepair--;
+            node next_job = dequeue(damaged);
+            exit_damaged(next_job);
+        }else if(nFaulty>0){
+            //nFaulty--;
+            //nRepair--;
+            node next_job = dequeue(faulty);
+            exit_faulty(next_job);
+        }
+        /* 
         if(nFaulty>0){ // priorità ai faulty
             //nFaulty--;
             //nRepair--;
@@ -344,7 +368,7 @@ public class NESssq{
             //nRepair--;
             node next_job = dequeue(damaged);
             exit_damaged(next_job);
-        }
+        }*/
     }
 
     public void repaired(node item){
@@ -423,11 +447,13 @@ public class NESssq{
             //caso spare-parts
             item.event.type= DAMAGED_SPARE;
             item.event.occur_time = clock + GetHyperExp(0.95, 0.05, 60, 2860);
+            //item.event.occur_time = clock + GetNegExp(200);
             schedule(item);
         }else{
             // caso serviced
             item.event.type= SERVICED;
             item.event.occur_time = clock + GetHyperExp(0.95, 0.05, 60, 2860);
+            //item.event.occur_time = clock + GetNegExp(200);
             schedule(item);
         }
     }
