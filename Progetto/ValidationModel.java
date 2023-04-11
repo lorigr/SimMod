@@ -51,7 +51,6 @@ public class ValidationModel{
     int NMax = 20;
 
 
-
     int job_number;    /* (progressive) Job identification number */
     int node_number;   /* progressive number used to identify the newly generated node*/
 
@@ -366,7 +365,7 @@ public class ValidationModel{
                 damaged_test++;
             }
         }else{
-            if(left_limit<=460&&right_limit>460){ // thoretical value of damaged machines
+            if(left_limit<=423&&right_limit>423){ // thoretical value of damaged machines
                 damaged_test++;
             }
         }
@@ -603,7 +602,7 @@ public class ValidationModel{
     public void planNewFailure(boolean tag){
         inter_arrival_t = GetInterArrival();
         arrival_t = clock + inter_arrival_t;
-        service_t = GetUniform(3, 7);
+        service_t = GetNegExp(S1);
 
         node newNode = get_new_node();
         newNode.event.name = "J" + (job_number++);   

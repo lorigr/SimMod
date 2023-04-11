@@ -1,0 +1,1952 @@
+-------------------------------------------------------------------------------
+
+
+System with 1 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        0.9359369852346582
+Average waiting time:           2500.0
+Average throughput:             3.743747940938633E-4
+Average utilization:            0.9359369852346582
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.0018718739704693165
+Average waiting time:           5.0
+Average throughput:             3.743747940938633E-4
+Average utilization:            0.0018718739704693165
+
+Station number: 3 ++++++++++++
+Average number in queue:        4.192997693851269E-4
+Average waiting time:           4.0
+Average throughput:             1.0482494234628172E-4
+Average utilization:            4.192997693851269E-4
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.009359369852346582
+Average waiting time:           50.0
+Average throughput:             1.8718739704693164E-4
+Average utilization:            0.009359369852346582
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.029949983527509064
+Average waiting time:           200.0
+Average throughput:             1.4974991763754532E-4
+Average utilization:            0.029949983527509064
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.022462487645631798
+Average waiting time:           500.0
+Average throughput:             4.4924975291263595E-5
+Average utilization:            0.022462487645631798
+
+System with 2 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        1.869083723051443
+Average waiting time:           2500.0
+Average throughput:             7.476334892205772E-4
+Average utilization:            0.9345418615257215
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.0037451648244425017
+Average waiting time:           5.009359369852346
+Average throughput:             7.476334892205772E-4
+Average utilization:            0.003738167446102886
+
+Station number: 3 ++++++++++++
+Average number in queue:        8.377006083826149E-4
+Average waiting time:           4.00167719907754
+Average throughput:             2.0933737698176162E-4
+Average utilization:            8.373495079270465E-4
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.018865771689004825
+Average waiting time:           50.46796849261733
+Average throughput:             3.738167446102886E-4
+Average utilization:            0.01869083723051443
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.061602007992587804
+Average waiting time:           205.9899967055018
+Average throughput:             2.990533956882309E-4
+Average utilization:            0.05981067913764618
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.045865631834139296
+Average waiting time:           511.23124382281594
+Average throughput:             8.971601870646925E-5
+Average utilization:            0.044858009353234626
+
+System with 3 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        2.799247584906901
+Average waiting time:           2500.0
+Average throughput:             0.0011196990339627604
+Average utilization:            0.9330825283023003
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.0056194624569936
+Average waiting time:           5.018725824122212
+Average throughput:             0.0011196990339627604
+Average utilization:            0.005598495169813802
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.0012551134473076824
+Average waiting time:           4.0033508024335305
+Average throughput:             3.135157295095729E-4
+Average utilization:            0.0012540629180382917
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.028520575507447528
+Average waiting time:           50.943288584450244
+Average throughput:             5.598495169813802E-4
+Average utilization:            0.02799247584906901
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.09509397942417819
+Average waiting time:           212.32040159851758
+Average throughput:             4.4787961358510415E-4
+Average utilization:            0.08957592271702083
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.07026328425717226
+Average waiting time:           522.9328159170697
+Average throughput:             1.3436388407553123E-4
+Average utilization:            0.06718194203776562
+
+System with 4 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        3.726218575082228
+Average waiting time:           2500.0
+Average throughput:             0.0014904874300328912
+Average utilization:            0.931554643770557
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.0074943158409429105
+Average waiting time:           5.028097312284968
+Average throughput:             0.0014904874300328912
+Average utilization:            0.0074524371501644565
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.001671441140151293
+Average waiting time:           4.005020453789231
+Average throughput:             4.1733648040920957E-4
+Average utilization:            0.0016693459216368383
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.038324924733101146
+Average waiting time:           51.42602877537238
+Average throughput:             7.452437150164456E-4
+Average utilization:            0.03726218575082228
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.13057790488291482
+Average waiting time:           219.0187958848356
+Average throughput:             5.961949720131566E-4
+Average utilization:            0.11923899440263132
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.09571283832066206
+Average waiting time:           535.1316421285861
+Average throughput:             1.7885849160394695E-4
+Average utilization:            0.08942924580197348
+
+System with 5 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        4.649767480856813
+Average waiting time:           2500.0
+Average throughput:             0.0018599069923427253
+Average utilization:            0.9299534961713626
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.0093692286138906
+Average waiting time:           5.0374715792047144
+Average throughput:             0.0018599069923427253
+Average utilization:            0.009299534961713627
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.002086577603495372
+Average waiting time:           4.006685764560605
+Average throughput:             5.207739578559631E-4
+Average utilization:            0.0020830958314238526
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.04827969469587072
+Average waiting time:           51.91624623665506
+Average throughput:             9.299534961713626E-4
+Average utilization:            0.04649767480856813
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.16822158005439375
+Average waiting time:           226.11558097658295
+Average throughput:             7.439627969370901E-4
+Average utilization:            0.14879255938741803
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.1222754381755376
+Average waiting time:           547.856419160331
+Average throughput:             2.23188839081127E-4
+Average utilization:            0.11159441954056351
+
+System with 6 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        5.569643808312505
+Average waiting time:           2500.0
+Average throughput:             0.002227857523325002
+Average utilization:            0.9282739680520842
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.01124365414890105
+Average waiting time:           5.046846143069454
+Average throughput:             0.002227857523325002
+Average utilization:            0.01113928761662501
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.0025004068554493847
+Average waiting time:           4.008346310413981
+Average throughput:             6.238001065310006E-4
+Average utilization:            0.0024952004261240023
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.058385445109425796
+Average waiting time:           52.41398473479354
+Average throughput:             0.001113928761662501
+Average utilization:            0.05569643808312505
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.20821049888278417
+Average waiting time:           233.64431601087875
+Average throughput:             8.911430093300008E-4
+Average utilization:            0.17822860186600015
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.15001618669093403
+Average waiting time:           561.1377190877688
+Average throughput:             2.673429027990002E-4
+Average utilization:            0.1336714513995001
+
+System with 7 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        6.485573479685597
+Average waiting time:           2500.0
+Average throughput:             0.0025942293918742388
+Average utilization:            0.9265104970979424
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.013116990049696934
+Average waiting time:           5.056218270744505
+Average throughput:             0.0025942293918742388
+Average utilization:            0.012971146959371193
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.0029128019433299237
+Average waiting time:           4.010001627421797
+Average throughput:             7.263842297247869E-4
+Average utilization:            0.0029055369188991475
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.06864236574086928
+Average waiting time:           52.91927225547129
+Average throughput:             0.0012971146959371194
+Average utilization:            0.06485573479685597
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.2507500150218205
+Average waiting time:           241.64209977655685
+Average throughput:             0.0010376917567496956
+Average utilization:            0.20753835134993912
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.17900434755868516
+Average waiting time:           575.0080933454669
+Average throughput:             3.1130752702490867E-4
+Average utilization:            0.15565376351245433
+
+System with 8 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        7.397256266366671
+Average waiting time:           2500.0
+Average throughput:             0.0029589025065466686
+Average utilization:            0.9246570332958339
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.014988572006415323
+Average waiting time:           5.0655849502484855
+Average throughput:             0.0029589025065466686
+Average utilization:            0.014794512532733343
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.0033236237479400054
+Average waiting time:           4.01165120777332
+Average throughput:             8.284927018330673E-4
+Average utilization:            0.003313970807332269
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.07905021436481549
+Average waiting time:           53.432118287043465
+Average throughput:             0.0014794512532733343
+Average utilization:            0.07397256266366671
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.29606778836090786
+Average waiting time:           250.1500030043641
+Average throughput:             0.0011835610026186675
+Average utilization:            0.2367122005237335
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.20931353515324877
+Average waiting time:           589.5021737793426
+Average throughput:             3.550683007856002E-4
+Average utilization:            0.1775341503928001
+
+System with 9 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        8.304362930102995
+Average waiting time:           2500.0
+Average throughput:             0.0033217451720411978
+Average utilization:            0.9227069922336661
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.016857666943696496
+Average waiting time:           5.074942860032077
+Average throughput:             0.0033217451720411978
+Average utilization:            0.016608725860205988
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.0037327196515611507
+Average waiting time:           4.01329449499176
+Average throughput:             9.300886481715355E-4
+Average utilization:            0.003720354592686142
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.08960824599890864
+Average waiting time:           53.952510718240774
+Average throughput:             0.0016608725860205989
+Average utilization:            0.08304362930102994
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.3444165534900767
+Average waiting time:           259.2135576721816
+Average throughput:             0.0013286980688164791
+Average utilization:            0.2657396137632958
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.2410218838127626
+Average waiting time:           604.6567675766244
+Average throughput:             3.986094206449437E-4
+Average utilization:            0.19930471032247185
+
+System with 10 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        9.206532043899454
+Average waiting time:           2500.0
+Average throughput:             0.0036826128175597816
+Average utilization:            0.9206532043899454
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.01872346538960396
+Average waiting time:           5.084288334718482
+Average throughput:             0.0036826128175597816
+Average utilization:            0.018413064087798907
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.004139922056248135
+Average waiting time:           4.014930878606244
+Average throughput:             0.001031131588916739
+Average utilization:            0.004124526355666956
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.10031513232086033
+Average waiting time:           54.480412299945435
+Average throughput:             0.0018413064087798908
+Average utilization:            0.09206532043899454
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.39607725056176823
+Average waiting time:           268.88331069801535
+Average throughput:             0.0014730451270239127
+Average utilization:            0.29460902540478257
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.2742121857720639
+Average waiting time:           620.5109419063814
+Average throughput:             4.419135381071738E-4
+Average utilization:            0.22095676905358688
+
+System with 11 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        10.103366463843782
+Average waiting time:           2500.0
+Average throughput:             0.004041346585537513
+Average utilization:            0.9184878603494347
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.020585072992296092
+Average waiting time:           5.09361732694802
+Average throughput:             0.004041346585537513
+Average utilization:            0.020206732927687564
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.004545046738852394
+Average waiting time:           4.0165596882249925
+Average throughput:             0.0011315770439505038
+Average utilization:            0.004526308175802015
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.11116887007550415
+Average waiting time:           55.01575661604302
+Average throughput:             0.0020206732927687565
+Average utilization:            0.10103366463843783
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.4513625623763521
+Average waiting time:           279.21545011235366
+Average throughput:             0.0016165386342150052
+Average utilization:            0.323307726843001
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.3089719839732133
+Average waiting time:           637.1060928860319
+Average throughput:             4.849615902645015E-4
+Average utilization:            0.24248079513225076
+
+System with 12 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        10.994429424014092
+Average waiting time:           2500.0
+Average throughput:             0.004397771769605637
+Average utilization:            0.9162024520011743
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.022441501112432143
+Average waiting time:           5.1029253649614805
+Average throughput:             0.004397771769605637
+Average utilization:            0.021988858848028186
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.004947891029586736
+Average waiting time:           4.0181801869554095
+Average throughput:             0.0012313760954895784
+Average utilization:            0.004925504381958314
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.12216667720206616
+Average waiting time:           55.55844350377521
+Average throughput:             0.0021988858848028185
+Average utilization:            0.10994429424014092
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.5106209043424977
+Average waiting time:           290.27251247527045
+Average throughput:             0.001759108707842255
+Average utilization:            0.351821741568451
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.34539360229932475
+Average waiting time:           654.4859919866066
+Average throughput:             5.277326123526764E-4
+Average utilization:            0.2638663061763382
+
+System with 13 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        11.87924022932249
+Average waiting time:           2500.0
+Average throughput:             0.004751696091728996
+Average utilization:            0.9137877099478838
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.024291656424287357
+Average waiting time:           5.112207505562161
+Average throughput:             0.004751696091728996
+Average utilization:            0.023758480458644978
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.005348231802140175
+Average waiting time:           4.019791564118347
+Average throughput:             0.001330474905684119
+Average utilization:            0.005321899622736476
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.1333048753582393
+Average waiting time:           56.10833386010331
+Average throughput:             0.002375848045864498
+Average utilization:            0.1187924022932249
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.5742409157798694
+Average waiting time:           302.12418086849954
+Average throughput:             0.0019006784366915983
+Average utilization:            0.38013568733831965
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.3835740913129737
+Average waiting time:           672.6968011496624
+Average throughput:             5.702035310074794E-4
+Average utilization:            0.2851017655037397
+
+System with 14 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        12.75726952635429
+Average waiting time:           2500.0
+Average throughput:             0.0051029078105417165
+Average utilization:            0.9112335375967351
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.026134329469201044
+Average waiting time:           5.121458282121437
+Average throughput:             0.0051029078105417165
+Average utilization:            0.025514539052708583
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.00574582326570274
+Average waiting time:           4.021392927208561
+Average throughput:             0.0014288141869516807
+Average utilization:            0.005715256747806723
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.14457875750476415
+Average waiting time:           56.66524376791197
+Average throughput:             0.0025514539052708582
+Average utilization:            0.12757269526354292
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.6426565011845952
+Average waiting time:           314.84818315597386
+Average throughput:             0.0020411631242166868
+Average utilization:            0.40823262484333733
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.42361506222144785
+Average waiting time:           691.7870456564868
+Average throughput:             6.123489372650059E-4
+Average utilization:            0.30617446863250297
+
+System with 15 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        13.627934140958757
+Average waiting time:           2500.0
+Average throughput:             0.005451173656383503
+Average utilization:            0.9085289427305838
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.027968182123566297
+Average waiting time:           5.130671647346006
+Average throughput:             0.005451173656383503
+Average utilization:            0.027255868281917516
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.006140394553220187
+Average waiting time:           4.022983293062811
+Average throughput:             0.001526328623787381
+Average utilization:            0.006105314495149524
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.1559824392641533
+Average waiting time:           57.22893787523821
+Average throughput:             0.0027255868281917516
+Average utilization:            0.13627934140958758
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.7163524676595651
+Average waiting time:           328.53130023691904
+Average throughput:             0.0021804694625534014
+Average utilization:            0.43609389251068026
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.4656223754407391
+Average waiting time:           711.807531110724
+Average throughput:             6.541408387660204E-4
+Average utilization:            0.3270704193830102
+
+System with 16 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        14.490591484798085
+Average waiting time:           2500.0
+Average throughput:             0.005796236593919234
+Average utilization:            0.9056619677998803
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.02979173397304623
+Average waiting time:           5.139840910617831
+Average throughput:             0.005796236593919234
+Average utilization:            0.02898118296959617
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.006531647106353277
+Average waiting time:           4.0245615782128805
+Average throughput:             0.0016229462462973856
+Average utilization:            0.006491784985189542
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.1675086929097726
+Average waiting time:           57.79912196320767
+Average throughput:             0.002898118296959617
+Average utilization:            0.14490591484798085
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.7958707984889559
+Average waiting time:           343.27049353191296
+Average throughput:             0.0023184946375676935
+Average utilization:            0.4636989275135387
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.5097056427237868
+Average waiting time:           732.8111877203696
+Average throughput:             6.955483912703081E-4
+Average utilization:            0.34777419563515405
+
+System with 17 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        15.344533552866032
+Average waiting time:           2500.0
+Average throughput:             0.006137813421146413
+Average utilization:            0.9026196207568254
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.031603347628826994
+Average waiting time:           5.148958669865231
+Average throughput:             0.006137813421146413
+Average utilization:            0.030689067105732062
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.006919251866708138
+Average waiting time:           4.026126588425413
+Average throughput:             0.0017185877579209956
+Average utilization:            0.006874351031683983
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.17914876311616773
+Average waiting time:           58.37543464548863
+Average throughput:             0.0030689067105732063
+Average utilization:            0.15344533552866033
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.8818175911688352
+Average waiting time:           359.1741596977912
+Average throughput:             0.002455125368458565
+Average utilization:            0.49102507369171305
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.5559774933534318
+Average waiting time:           754.8528213618935
+Average throughput:             7.365376105375695E-4
+Average utilization:            0.36826880526878475
+
+System with 18 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        16.188980562123014
+Average waiting time:           2500.0
+Average throughput:             0.006475592224849205
+Average utilization:            0.8993878090068341
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.033401213085168226
+Average waiting time:           5.158016738144136
+Average throughput:             0.006475592224849205
+Average utilization:            0.03237796112424603
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.007302846295851717
+Average waiting time:           4.027677007466832
+Average throughput:             0.0018131658229577775
+Average utilization:            0.00725266329183111
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.1908921640593903
+Average waiting time:           58.95743815580838
+Average throughput:             0.0032377961124246024
+Average utilization:            0.16188980562123012
+
+Station number: 5 ++++++++++++
+Average number in queue:        0.9748706689565895
+Average waiting time:           376.363518233767
+Average throughput:             0.002590236889939682
+Average utilization:            0.5180473779879364
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.6045525454799903
+Average waiting time:           777.9887466767159
+Average throughput:             7.770710669819046E-4
+Average utilization:            0.38853553349095227
+
+System with 19 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        17.02307432023371
+Average waiting time:           2500.0
+Average throughput:             0.006809229728093484
+Average utilization:            0.8959512800123006
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.03518333130593698
+Average waiting time:           5.167006065425841
+Average throughput:             0.006809229728093484
+Average utilization:            0.03404614864046742
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.0076820312645338035
+Average waiting time:           4.029211385183407
+Average throughput:             0.0019065843238661756
+Average utilization:            0.007626337295464703
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.2027264581616696
+Average waiting time:           59.54460820296952
+Average throughput:             0.003404614864046742
+Average utilization:            0.1702307432023371
+
+Station number: 5 ++++++++++++
+Average number in queue:        1.075787845455926
+Average waiting time:           394.97413379131785
+Average throughput:             0.0027236918912373937
+Average utilization:            0.5447383782474787
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.6555460135782253
+Average waiting time:           802.2762727399951
+Average throughput:             8.17107567371218E-4
+Average utilization:            0.408553783685609
+
+System with 20 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        17.845871465676716
+Average waiting time:           2500.0
+Average throughput:             0.007138348586270687
+Average utilization:            0.8922935732838357
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.03694749734779357
+Average waiting time:           5.175916656529685
+Average throughput:             0.007138348586270687
+Average utilization:            0.03569174293135343
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.008056367875682065
+Average waiting time:           4.030728125058135
+Average throughput:             0.0019987376041557922
+Average utilization:            0.007994950416623169
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.2146370178072176
+Average waiting time:           60.136322908083486
+Average throughput:             0.0035691742931353433
+Average utilization:            0.17845871465676716
+
+Station number: 5 ++++++++++++
+Average number in queue:        1.1854157785606547
+Average waiting time:           415.15756909118517
+Average throughput:             0.002855339434508275
+Average utilization:            0.571067886901655
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.7090718727319316
+Average waiting time:           827.7730067891127
+Average throughput:             8.566018303524823E-4
+Average utilization:            0.42830091517624114
+
+System with 21 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        18.65633678921781
+Average waiting time:           2500.0
+Average throughput:             0.007462534715687124
+Average utilization:            0.8883969899627528
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.03869128348651397
+Average waiting time:           5.184737486738968
+Average throughput:             0.007462534715687124
+Average utilization:            0.03731267357843562
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.008425374317518757
+Average waiting time:           4.032225471502728
+Average throughput:             0.002089509720392395
+Average utilization:            0.00835803888156958
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.226606772808626
+Average waiting time:           60.73185089036088
+Average throughput:             0.003731267357843562
+Average utilization:            0.1865633678921781
+
+Station number: 5 ++++++++++++
+Average number in queue:        1.3046992892575435
+Average waiting time:           437.083155712131
+Average throughput:             0.00298501388627485
+Average utilization:            0.59700277725497
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.7652404909119868
+Average waiting time:           854.5359363659658
+Average throughput:             8.955041658824549E-4
+Average utilization:            0.4477520829412274
+
+System with 22 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        19.453336934895983
+Average waiting time:           2500.0
+Average throughput:             0.007781334773958393
+Average utilization:            0.8842425879498174
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.040412023018005436
+Average waiting time:           5.193456417432571
+Average throughput:             0.007781334773958393
+Average utilization:            0.03890667386979196
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.008788522883973188
+Average waiting time:           4.033701497270075
+Average throughput:             0.0021787737367083503
+Average utilization:            0.008715094946833401
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.2386159483807161
+Average waiting time:           61.3303386404313
+Average throughput:             0.0038906673869791965
+Average utilization:            0.19453336934895982
+
+Station number: 5 ++++++++++++
+Average number in queue:        1.4346909378413533
+Average waiting time:           460.9398578515087
+Average throughput:             0.003112533909583357
+Average utilization:            0.6225067819166714
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.8241556329799696
+Average waiting time:           882.6202454559934
+Average throughput:             9.337601728750071E-4
+Average utilization:            0.46688008643750356
+
+System with 23 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        20.23563488880524
+Average waiting time:           2500.0
+Average throughput:             0.008094253955522096
+Average utilization:            0.8798102125567496
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.04210679566343118
+Average waiting time:           5.202060115090027
+Average throughput:             0.008094253955522096
+Average utilization:            0.04047126977761048
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.009145237350635561
+Average waiting time:           4.035154091535893
+Average throughput:             0.002266391107546187
+Average utilization:            0.009065564430184749
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.25064180098883404
+Average waiting time:           61.9307974190358
+Average throughput:             0.004047126977761048
+Average utilization:            0.2023563488880524
+
+Station number: 5 ++++++++++++
+Average number in queue:        1.5765605403276943
+Average waiting time:           486.9381875682707
+Average throughput:             0.003237701582208839
+Average utilization:            0.6475403164417678
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.8859107368641619
+Average waiting time:           912.0778164899848
+Average throughput:             9.713104746626515E-4
+Average utilization:            0.48565523733132576
+
+System with 24 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        21.00188579739319
+Average waiting time:           2500.0
+Average throughput:             0.008400754318957275
+Average utilization:            0.8750785748913829
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.04377241582242148
+Average waiting time:           5.210533978317155
+Average throughput:             0.008400754318957275
+Average utilization:            0.042003771594786375
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.00949489095646394
+Average waiting time:           4.036580949402542
+Average throughput:             0.0023522112093080374
+Average utilization:            0.00940884483723215
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.2626583627781363
+Average waiting time:           62.5320900494417
+Average throughput:             0.004200377159478638
+Average utilization:            0.21001885797393188
+
+Station number: 5 ++++++++++++
+Average number in queue:        1.7316041669770215
+Average waiting time:           515.3121080655388
+Average throughput:             0.00336030172758291
+Average utilization:            0.672060345516582
+
+Station number: 6 ++++++++++++
+Average number in queue:        0.9505843660727702
+Average waiting time:           942.955368432081
+Average throughput:             0.001008090518274873
+Average utilization:            0.5040452591374365
+
+System with 25 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        21.750634812708693
+Average waiting time:           2500.0
+Average throughput:             0.008700253925083477
+Average utilization:            0.8700253925083478
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.045405425288264425
+Average waiting time:           5.218862079112108
+Average throughput:             0.008700253925083477
+Average utilization:            0.04350126962541738
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.009836805313883175
+Average waiting time:           4.037979563825855
+Average throughput:             0.002436071099023374
+Average utilization:            0.009744284396093495
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.2746362094199989
+Average waiting time:           63.13291813890681
+Average throughput:             0.004350126962541738
+Average utilization:            0.2175063481270869
+
+Station number: 5 ++++++++++++
+Average number in queue:        1.901251990041297
+Average waiting time:           546.3208333954043
+Average throughput:             0.003480101570033391
+Average utilization:            0.6960203140066782
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.018234757227865
+Average waiting time:           975.292183036385
+Average throughput:             0.001044030471010017
+Average utilization:            0.5220152355050085
+
+System with 26 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        22.480317835004534
+Average waiting time:           2500.0
+Average throughput:             0.008992127134001814
+Average utilization:            0.8646276090386359
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.04700209245383655
+Average waiting time:           5.227027126441323
+Average throughput:             0.008992127134001814
+Average utilization:            0.04496063567000907
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.010170250650533877
+Average waiting time:           4.039347221255532
+Average throughput:             0.002517795597520508
+Average utilization:            0.010071182390082032
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.2865422711176697
+Average waiting time:           63.73181047099994
+Average throughput:             0.004496063567000907
+Average utilization:            0.22480317835004535
+
+Station number: 5 ++++++++++++
+Average number in queue:        2.0870741393781684
+Average waiting time:           580.2503980082595
+Average throughput:             0.0035968508536007257
+Average utilization:            0.7193701707201451
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.0888934113952549
+Average waiting time:           1009.1173786139325
+Average throughput:             0.0010790552560802176
+Average utilization:            0.5395276280401088
+
+System with 27 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        23.189266202235164
+Average waiting time:           2500.0
+Average throughput:             0.009275706480894066
+Average utilization:            0.858861711193895
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.048558420472418505
+Average waiting time:           5.235010462269183
+Average throughput:             0.009275706480894066
+Average utilization:            0.04637853240447033
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.010494447869657407
+Average waiting time:           4.040681002602136
+Average throughput:             0.002597197814650339
+Average utilization:            0.010388791258601355
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.2983397120537585
+Average waiting time:           64.32711355588349
+Average throughput:             0.004637853240447033
+Average utilization:            0.23189266202235165
+
+Station number: 5 ++++++++++++
+Average number in queue:        2.290783488130444
+Average waiting time:           617.4148278756337
+Average throughput:             0.0037102825923576266
+Average utilization:            0.7420565184715253
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.1625577292385525
+Average waiting time:           1044.4467056976275
+Average throughput:             0.0011130847777072878
+Average utilization:            0.5565423888536438
+
+System with 28 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        23.87571654160721
+Average waiting time:           2500.0
+Average throughput:             0.009550286616642884
+Average utilization:            0.8527041622002576
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.0500701672490297
+Average waiting time:           5.242792102362093
+Average throughput:             0.009550286616642884
+Average utilization:            0.04775143308321442
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.010808572993883313
+Average waiting time:           4.0419777914786295
+Average throughput:             0.0026740802526600076
+Average utilization:            0.01069632101064003
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.30998790939707466
+Average waiting time:           64.91698560268793
+Average throughput:             0.004775143308321442
+Average utilization:            0.23875716541607211
+
+Station number: 5 ++++++++++++
+Average number in queue:        2.5142340403969254
+Average waiting time:           658.1566976260888
+Average throughput:             0.003820114646657154
+Average utilization:            0.7640229293314308
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.2391827683558745
+Average waiting time:           1081.2788646192764
+Average throughput:             0.001146034393997146
+Average utilization:            0.573017196998573
+
+System with 29 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        24.537827119686355
+Average waiting time:           2500.0
+Average throughput:             0.009815130847874541
+Average utilization:            0.8461319696443571
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.05153288045499366
+Average waiting time:           5.250350836245149
+Average throughput:             0.009815130847874541
+Average utilization:            0.049075654239372705
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.011111764614818907
+Average waiting time:           4.0432342919755335
+Average throughput:             0.0027482366374048718
+Average utilization:            0.010992946549619487
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.32144256849664765
+Average waiting time:           65.49939546985372
+Average throughput:             0.004907565423937271
+Average utilization:            0.24537827119686353
+
+Station number: 5 ++++++++++++
+Average number in queue:        2.7594133549240523
+Average waiting time:           702.8468080793851
+Average throughput:             0.003926052339149817
+Average utilization:            0.7852104678299634
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.3186723118231314
+Average waiting time:           1119.5913841779372
+Average throughput:             0.001177815701744945
+Average utilization:            0.5889078508724724
+
+System with 30 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        25.173702061034543
+Average waiting time:           2500.0
+Average throughput:             0.010069480824413817
+Average utilization:            0.8391234020344848
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.05294195087991093
+Average waiting time:           5.257664402274969
+Average throughput:             0.010069480824413817
+Average utilization:            0.05034740412206909
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.011403134988143514
+Average waiting time:           4.0444470584592755
+Average throughput:             0.002819454630835869
+Average utilization:            0.011277818523343476
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.3326560151010284
+Average waiting time:           66.07212842483239
+Average throughput:             0.005034740412206909
+Average utilization:            0.2517370206103454
+
+Station number: 5 ++++++++++++
+Average number in queue:        3.0284272550762372
+Average waiting time:           751.8826709848105
+Average throughput:             0.004027792329765527
+Average utilization:            0.8055584659531054
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.4008695829201363
+Average waiting time:           1159.3361559115656
+Average throughput:             0.001208337698929658
+Average utilization:            0.604168849464829
+
+System with 31 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        25.781424694672328
+Average waiting time:           2500.0
+Average throughput:             0.010312569877868931
+Average utilization:            0.8316588611184622
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.054292687228943586
+Average waiting time:           5.264709754399554
+Average throughput:             0.010312569877868931
+Average utilization:            0.051562849389344655
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.011681785364772247
+Average waiting time:           4.045612539952574
+Average throughput:             0.0028875195658033008
+Average utilization:            0.011550078263213203
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.34357770697229273
+Average waiting time:           66.63280075505142
+Average throughput:             0.0051562849389344655
+Average utilization:            0.2578142469467233
+
+Station number: 5 ++++++++++++
+Average number in queue:        3.3234750052708346
+Average waiting time:           805.6854510152474
+Average throughput:             0.004125027951147573
+Average utilization:            0.8250055902295146
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.4855481204908365
+Average waiting time:           1200.4347914600683
+Average throughput:             0.0012375083853442717
+Average utilization:            0.6187541926721358
+
+System with 32 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        26.35910096775758
+Average waiting time:           2500.0
+Average throughput:             0.010543640387103032
+Average utilization:            0.8237219052424244
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.05558041478447237
+Average waiting time:           5.2714634361447175
+Average throughput:             0.010543640387103032
+Average utilization:            0.05271820193551516
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.011946826002796734
+Average waiting time:           4.046727141459089
+Average throughput:             0.002952219308388849
+Average utilization:            0.011808877233555396
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.35415500436110875
+Average waiting time:           67.17888534861464
+Average throughput:             0.005271820193551516
+Average utilization:            0.2635910096775758
+
+Station number: 5 ++++++++++++
+Average number in queue:        3.6468132542563256
+Average waiting time:           864.6950010541669
+Average throughput:             0.004217456154841213
+Average utilization:            0.8434912309682426
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.572403532837713
+Average waiting time:           1242.7740602454182
+Average throughput:             0.0012652368464523638
+Average utilization:            0.6326184232261819
+
+System with 33 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        26.904913272418238
+Average waiting time:           2500.0
+Average throughput:             0.010761965308967295
+Average utilization:            0.8153004021944921
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.05680059902367899
+Average waiting time:           5.277902073922362
+Average throughput:             0.010761965308967295
+Average utilization:            0.05380982654483647
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.012197401032277065
+Average waiting time:           4.047787304011187
+Average throughput:             0.003013350286510843
+Average utilization:            0.012053401146043372
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.3643342294974677
+Average waiting time:           67.70775021805544
+Average throughput:             0.005380982654483647
+Average utilization:            0.26904913272418235
+
+Station number: 5 ++++++++++++
+Average number in queue:        4.0007074431644805
+Average waiting time:           929.3626508512652
+Average throughput:             0.004304786123586918
+Average utilization:            0.8609572247173837
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.6610470548638625
+Average waiting time:           1286.2017664188566
+Average throughput:             0.0012914358370760752
+Average utilization:            0.6457179185380376
+
+System with 34 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        27.41718411794422
+Average waiting time:           2500.0
+Average throughput:             0.010966873647177688
+Average utilization:            0.80638776817483
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.057948993198771906
+Average waiting time:           5.284002995118396
+Average throughput:             0.010966873647177688
+Average utilization:            0.05483436823588844
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.01243271792349734
+Average waiting time:           4.048789604129108
+Average throughput:             0.003070724621209753
+Average utilization:            0.012282898484839011
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.3740620276854564
+Average waiting time:           68.21671147487338
+Average throughput:             0.005483436823588844
+Average utilization:            0.2741718411794422
+
+Station number: 5 ++++++++++++
+Average number in queue:        4.387370134054868
+Average waiting time:           1000.1414886328961
+Average throughput:             0.004386749458871075
+Average utilization:            0.8773498917742151
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.7510020091931777
+Average waiting time:           1330.5235274319314
+Average throughput:             0.0013160248376613225
+Average utilization:            0.6580124188306613
+
+System with 35 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        27.894447841591354
+Average waiting time:           2500.0
+Average throughput:             0.011157779136636542
+Average utilization:            0.7969842240454673
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.059021806019694464
+Average waiting time:           5.28974496599386
+Average throughput:             0.011157779136636542
+Average utilization:            0.05578889568318271
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.012652080736170431
+Average waiting time:           4.049730871693989
+Average throughput:             0.003124178158258232
+Average utilization:            0.012496712633032928
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.38328701562383216
+Average waiting time:           68.70310138427283
+Average throughput:             0.005578889568318271
+Average utilization:            0.2789444784159135
+
+Station number: 5 ++++++++++++
+Average number in queue:        4.808886886647698
+Average waiting time:           1077.4740268109736
+Average throughput:             0.004463111654654617
+Average utilization:            0.8926223309309234
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.8417043693812507
+Average waiting time:           1375.5010045965887
+Average throughput:             0.001338933496396385
+Average utilization:            0.6694667481981925
+
+System with 36 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        28.33552705232282
+Average waiting time:           2500.0
+Average throughput:             0.011334210820929128
+Average utilization:            0.7870979736756339
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.060015882066941646
+Average waiting time:           5.295109030098473
+Average throughput:             0.011334210820929128
+Average utilization:            0.05667105410464564
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.01285492563187426
+Average waiting time:           4.050608322944682
+Average throughput:             0.003173579029860156
+Average utilization:            0.012694316119440625
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.3919616665233599
+Average waiting time:           69.16435078119162
+Average throughput:             0.005667105410464564
+Average utilization:            0.2833552705232282
+
+Station number: 5 ++++++++++++
+Average number in queue:        5.267131888655652
+Average waiting time:           1161.7773773295396
+Average throughput:             0.0045336843283716515
+Average utilization:            0.9067368656743303
+
+Station number: 6 ++++++++++++
+Average number in queue:        1.9325085847993533
+Average waiting time:           1420.8521846906256
+Average throughput:             0.0013601052985114952
+Average utilization:            0.6800526492557476
+
+System with 37 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        28.73960890322902
+Average waiting time:           2500.0
+Average throughput:             0.011495843561291607
+Average utilization:            0.7767461865737573
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.060928883763630474
+Average waiting time:           5.300079410334709
+Average throughput:             0.011495843561291607
+Average utilization:            0.05747921780645804
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013040856388389392
+Average waiting time:           4.051419702527497
+Average throughput:             0.0032188361971616504
+Average utilization:            0.012875344788646602
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.4000443390416826
+Average waiting time:           69.598083326168
+Average throughput:             0.005747921780645804
+Average utilization:            0.2873960890322902
+
+Station number: 5 ++++++++++++
+Average number in queue:        5.763677421597391
+Average waiting time:           1253.4263777311305
+Average throughput:             0.004598337424516643
+Average utilization:            0.9196674849033286
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.022699595979881
+Average waiting time:           1466.2542923996766
+Average throughput:             0.001379501227354993
+Average utilization:            0.6897506136774965
+
+System with 38 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        29.10631485432545
+Average waiting time:           2500.0
+Average throughput:             0.01164252594173018
+Average utilization:            0.765955654061196
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06175946025774455
+Average waiting time:           5.304644418818151
+Average throughput:             0.01164252594173018
+Average utilization:            0.058212629708650904
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.01320967698459851
+Average waiting time:           4.052163425553558
+Average throughput:             0.003259907263684451
+Average utilization:            0.013039629054737803
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.40750131342163187
+Average waiting time:           70.00221695208413
+Average throughput:             0.00582126297086509
+Average utilization:            0.29106314854325455
+
+Station number: 5 ++++++++++++
+Average number in queue:        6.299703187395386
+Average waiting time:           1352.7354843194782
+Average throughput:             0.004657010376692072
+Average utilization:            0.9314020753384145
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.111511507615186
+Average waiting time:           1511.3497979899405
+Average throughput:             0.0013971031130076217
+Average utilization:            0.6985515565038108
+
+System with 39 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        29.435756664113015
+Average waiting time:           2500.0
+Average throughput:             0.011774302665645206
+Average utilization:            0.7547629913875132
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06250738621593388
+Average waiting time:           5.308797301288722
+Average throughput:             0.011774302665645206
+Average utilization:            0.05887151332822603
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013361417888646551
+Average waiting time:           4.052838707938394
+Average throughput:             0.003296804746380658
+Average utilization:            0.013187218985522633
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.41430866166298624
+Average waiting time:           70.3750656710816
+Average throughput:             0.005887151332822603
+Average utilization:            0.29435756664113016
+
+Station number: 5 ++++++++++++
+Average number in queue:        6.875913175821465
+Average waiting time:           1459.9406374790772
+Average throughput:             0.004709721066258082
+Average utilization:            0.9419442132516165
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.198152694297953
+Average waiting time:           1555.755753807593
+Average throughput:             0.0014129163198774246
+Average utilization:            0.7064581599387123
+
+System with 40 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        29.728571300648138
+Average waiting time:           2500.0
+Average throughput:             0.011891428520259255
+Average utilization:            0.7432142825162035
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06317365317717136
+Average waiting time:           5.31253693107967
+Average throughput:             0.011891428520259255
+Average utilization:            0.059457142601296274
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013496352649932779
+Average waiting time:           4.053445671554586
+Average throughput:             0.0033295999856725917
+Average utilization:            0.013318399942690367
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.42045375889372333
+Average waiting time:           70.71543308314932
+Average throughput:             0.005945714260129627
+Average utilization:            0.2972857130064814
+
+Station number: 5 ++++++++++++
+Average number in queue:        7.492468684963921
+Average waiting time:           1575.1826351642928
+Average throughput:             0.004756571408103702
+Average utilization:            0.9513142816207404
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.281836249667119
+Average waiting time:           1599.0763471489763
+Average throughput:             0.0014269714224311105
+Average utilization:            0.7134857112155553
+
+System with 41 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        29.985928572658317
+Average waiting time:           2500.0
+Average throughput:             0.011994371429063327
+Average utilization:            0.7313641115282516
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06376049844900573
+Average waiting time:           5.315868265885857
+Average throughput:             0.011994371429063327
+Average utilization:            0.05997185714531664
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013615001899166354
+Average waiting time:           4.053985410599731
+Average throughput:             0.003358424000137732
+Average utilization:            0.013433696000550928
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.42593624954951204
+Average waiting time:           71.02268794468617
+Average throughput:             0.005997185714531663
+Average utilization:            0.29985928572658316
+
+Station number: 5 ++++++++++++
+Average number in queue:        8.148945900571702
+Average waiting time:           1698.493736992784
+Average throughput:             0.004797748571625331
+Average utilization:            0.9595497143250663
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.3618137768722978
+Average waiting time:           1640.9181248335597
+Average throughput:             0.001439324571487599
+Average utilization:            0.7196622857437995
+
+System with 42 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        30.209507629178805
+Average waiting time:           2500.0
+Average throughput:             0.012083803051671522
+Average utilization:            0.7192739911709239
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06427136178702857
+Average waiting time:           5.3188024922450285
+Average throughput:             0.012083803051671522
+Average utilization:            0.060419015258357606
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013718122939549484
+Average waiting time:           4.054460007596665
+Average throughput:             0.0033834648544680264
+Average utilization:            0.013533859417872105
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.43076832009488597
+Average waiting time:           71.2968124774756
+Average throughput:             0.006041901525835761
+Average utilization:            0.30209507629178806
+
+Station number: 5 ++++++++++++
+Average number in queue:        8.844324831432479
+Average waiting time:           1829.7891801143403
+Average throughput:             0.004833521220668609
+Average utilization:            0.9667042441337217
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.43740973456725
+Average waiting time:           1680.9068884361488
+Average throughput:             0.0014500563662005826
+Average utilization:            0.7250281831002913
+
+System with 43 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        30.40144185107518
+Average waiting time:           2500.0
+Average throughput:             0.012160576740430072
+Average utilization:            0.7070102756063995
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06471076783826589
+Average waiting time:           5.321356808935143
+Average throughput:             0.012160576740430072
+Average utilization:            0.06080288370215036
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013806684670431654
+Average waiting time:           4.054872491758198
+Average throughput:             0.0034049614873204207
+Average utilization:            0.013619845949281683
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.434974198857252
+Average waiting time:           71.53841600474429
+Average throughput:             0.006080288370215036
+Average utilization:            0.30401441851075184
+
+Station number: 5 ++++++++++++
+Average number in queue:        9.577013405628481
+Average waiting time:           1968.8649662864957
+Average throughput:             0.0048642306961720295
+Average utilization:            0.9728461392344059
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.5080530919303845
+Average waiting time:           1718.704867283625
+Average throughput:             0.0014592692088516086
+Average utilization:            0.7296346044258043
+
+System with 44 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        30.56423554150978
+Average waiting time:           2500.0
+Average throughput:             0.012225694216603912
+Average utilization:            0.694641716852495
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06508414138358098
+Average waiting time:           5.323553839191329
+Average throughput:             0.012225694216603912
+Average utilization:            0.06112847108301956
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013881829384113245
+Average waiting time:           4.055226738681727
+Average throughput:             0.0034231943806490956
+Average utilization:            0.013692777522596383
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.43858889409862345
+Average waiting time:           71.7487099428626
+Average throughput:             0.006112847108301956
+Average utilization:            0.3056423554150978
+
+Station number: 5 ++++++++++++
+Average number in queue:        10.344906529770734
+Average waiting time:           2115.4026811256963
+Average throughput:             0.004890277686641565
+Average utilization:            0.978055537328313
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.5733030638531664
+Average waiting time:           1754.0265459651923
+Average throughput:             0.0014670833059924695
+Average utilization:            0.7335416529962347
+
+System with 45 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        30.700659481417816
+Average waiting time:           2500.0
+Average throughput:             0.012280263792567126
+Average utilization:            0.6822368773648404
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06539757108735117
+Average waiting time:           5.325420706917905
+Average throughput:             0.012280263792567126
+Average utilization:            0.06140131896283563
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.01394482467764674
+Average waiting time:           4.055527317536453
+Average throughput:             0.0034384738619187955
+Average utilization:            0.013753895447675182
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.44165627771471266
+Average waiting time:           71.92944470493117
+Average throughput:             0.006140131896283563
+Average utilization:            0.30700659481417814
+
+Station number: 5 ++++++++++++
+Average number in queue:        11.145475591008154
+Average waiting time:           2268.9813059541466
+Average throughput:             0.004912105517026851
+Average utilization:            0.9824211034053701
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.632866254094313
+Average waiting time:           1786.6515319265832
+Average throughput:             0.001473631655108055
+Average utilization:            0.7368158275540275
+
+System with 46 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        30.813635088650916
+Average waiting time:           2500.0
+Average throughput:             0.012325454035460367
+Average utilization:            0.6698616323619764
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06565754395964132
+Average waiting time:           5.326987855436755
+Average throughput:             0.012325454035460367
+Average utilization:            0.06162727017730184
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.013997009970784128
+Average waiting time:           4.055779298710587
+Average throughput:             0.003451127129928903
+Average utilization:            0.013804508519715613
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.44422670464763936
+Average waiting time:           72.08281388573563
+Average throughput:             0.006162727017730183
+Average utilization:            0.30813635088650915
+
+Station number: 5 ++++++++++++
+Average number in queue:        11.975880090862148
+Average waiting time:           2429.0951182016306
+Average throughput:             0.004930181614184147
+Average utilization:            0.9860363228368294
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.686603561908872
+Average waiting time:           1816.4331270471566
+Average throughput:             0.001479054484255244
+Average utilization:            0.739527242127622
+
+System with 47 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        30.906118039194457
+Average waiting time:           2500.0
+Average throughput:             0.012362447215677783
+Average utilization:            0.6575769795573289
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06587067568594947
+Average waiting time:           5.328287719798207
+Average throughput:             0.012362447215677783
+Average utilization:            0.06181223607838891
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.014039742654133191
+Average waiting time:           4.055988039883137
+Average throughput:             0.0034614852203897796
+Average utilization:            0.013845940881559118
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.44635441009196775
+Average waiting time:           72.21133523238197
+Average throughput:             0.006181223607838892
+Average utilization:            0.3090611803919446
+
+Station number: 5 ++++++++++++
+Average number in queue:        12.833090616019804
+Average waiting time:           2595.1760181724294
+Average throughput:             0.004944978886271114
+Average utilization:            0.9889957772542227
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.734526516353688
+Average waiting time:           1843.301780954436
+Average throughput:             0.001483493665881334
+Average utilization:            0.741746832940667
+
+System with 48 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        30.980991578908277
+Average waiting time:           2500.0
+Average throughput:             0.01239239663156331
+Average utilization:            0.6454373245605891
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06604346085526334
+Average waiting time:           5.329353378429747
+Average throughput:             0.01239239663156331
+Average utilization:            0.06196198315781655
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.014074348614075015
+Average waiting time:           4.056158970616533
+Average throughput:             0.003469871056837727
+Average utilization:            0.013879484227350908
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.448094937991761
+Average waiting time:           72.3177205045984
+Average throughput:             0.006196198315781655
+Average utilization:            0.30980991578908273
+
+Station number: 5 ++++++++++++
+Average number in queue:        13.71401164432591
+Average waiting time:           2766.6181232039607
+Average throughput:             0.0049569586526253245
+Average utilization:            0.9913917305250649
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.7767840293047183
+Average waiting time:           1867.263258176844
+Average throughput:             0.0014870875957875972
+Average utilization:            0.7435437978937987
+
+System with 49 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        31.040977600674584
+Average waiting time:           2500.0
+Average throughput:             0.012416391040269833
+Average utilization:            0.6334893387892773
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06618206237950769
+Average waiting time:           5.330217304276317
+Average throughput:             0.012416391040269833
+Average utilization:            0.06208195520134917
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.014102080895055182
+Average waiting time:           4.0562973944563
+Average throughput:             0.0034765894912755536
+Average utilization:            0.013906357965102215
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.44950282533852504
+Average waiting time:           72.40474689958805
+Average throughput:             0.006208195520134917
+Average utilization:            0.31040977600674585
+
+Station number: 5 ++++++++++++
+Average number in queue:        14.615593787762737
+Average waiting time:           2942.802328865182
+Average throughput:             0.004966556416107933
+Average utilization:            0.9933112832215867
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.813641642949598
+Average waiting time:           1888.3920146523592
+Average throughput:             0.0014899669248323799
+Average utilization:            0.74498346241619
+
+System with 50 customers inside ***************************
+
+
+Station number: 1 ++++++++++++
+Average number in queue:        31.088570446054973
+Average waiting time:           2500.0
+Average throughput:             0.012435428178421989
+Average utilization:            0.6217714089210995
+
+Station number: 2 ++++++++++++
+Average number in queue:        0.06629215230921101
+Average waiting time:           5.330910311897538
+Average throughput:             0.012435428178421989
+Average utilization:            0.06217714089210995
+
+Station number: 3 ++++++++++++
+Average number in queue:        0.014124088823665793
+Average waiting time:           4.056408323580221
+Average throughput:             0.003481919889958157
+Average utilization:            0.013927679559832628
+
+Station number: 4 ++++++++++++
+Average number in queue:        0.45062970697292454
+Average waiting time:           72.47514126692624
+Average throughput:             0.0062177140892109945
+Average utilization:            0.31088570446054975
+
+Station number: 5 ++++++++++++
+Average number in queue:        15.534927600890889
+Average waiting time:           3123.1187575525473
+Average throughput:             0.004974171271368796
+Average utilization:            0.9948342542737592
+
+Station number: 6 ++++++++++++
+Average number in queue:        2.845456004948338
+Average waiting time:           1906.820821474799
+Average throughput:             0.0014922513814106387
+Average utilization:            0.7461256907053194

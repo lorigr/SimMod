@@ -613,7 +613,7 @@ public class NESssq{
     public void planNewFailure(boolean tag){
         inter_arrival_t = GetInterArrival();
         arrival_t = clock + inter_arrival_t;
-        service_t = GetUniform(3, 7); // potrebe non servire
+        service_t = GetUniform(3, 7); 
 
         node newNode = get_new_node();
         newNode.event.name = "J" + (job_number++);   
