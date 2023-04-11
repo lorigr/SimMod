@@ -17,10 +17,6 @@ public class NESssq{
     static final int DAMAGED_REPAIR = 5;
     static final int DAMAGED_SPARE = 6;
 
-
-    
-    int EVENT_NUMBER = 50;
-
     double Z = 2500;
     double S1 = 5;
     double S2 = 50;
@@ -35,33 +31,16 @@ public class NESssq{
     double qp23 = 0.3;
     double qp21 = 0.7;
     
-
-
-    double Start;            /* Beginning of Observation Period */
-    double Stop;             /* End of Observation Period */
-    double ObsPeriod;        /* Length of the Observation Period */
     double clock;            /* Clock of the simulator - Simulation time */ 
     double lastclock;        /* Time of last processed event */
-    double End_time;         /* Maximum simulation time */
 
     double inter_arrival_t;  /* inter arrival time read from trace file*/
     double arrival_t;        /* time of arrival */
     double service_t;        /* service time read from trace file*/
 
-    double sumService = 0;      /* sum of service time */
-    double sumInterarrival=0;  /* sum of the interarrival time*/
-    double sumDelay = 0;
-    double area = 0;
-    int inService=0;
-    double maxDelay = 0;
-    double busy = 0;
-    double doubleBusy = 0;
-    double sumWaiting = 0;
-
     boolean printState = false;       /* print the trace of the simulation */
 
     boolean halt;            /* End of simulation flag */
-    int nsys;                /* Number of customers in system */
     int nTestFix;            /* Number of customers in Test/fix station */
     int nRepair;             /* Number of customers in Repair station */
     int nSpare;              /* Number of customers in Spare-parts station */
@@ -69,14 +48,10 @@ public class NESssq{
     int nServiced;
     int nFaulty;
     int nDamaged;
-    int narr;                /* Number of Arrivals */
-    int ncom;                /* Number of Completions */
-    int ndelayed;            /* Number of Delayed Customers */
 
     int event_counter;       /* Number events processed by the simulator*/
     int number_of_nodes;     /* Number of memory blocks used for the simulation */
-    int return_number;       /* Number of nodes used by the simulator */
-    int NMax = 20;
+    int NMax = 20;          /* Maximum number of customers in the system */
 
     int rep = 0;
     double rep_sum = 0;
@@ -84,37 +59,17 @@ public class NESssq{
     int job_number;    /* (progressive) Job identification number */
     int node_number;   /* progressive number used to identify the newly generated node*/
 
-    int N = 10;
-
-    boolean endFlag = false;
-    boolean customerInService = false;
-    int nQueue = 0;
-    double [] res = new double[5];
-
-    ArrayList<Double> damaged_times = new ArrayList<Double>();
     double sum_damaged = 0.0; // somma dei tempi damaged dentro un regeneration cycle
     int damaged_count=0; // quante volte è stato raccolto il dato del tempo damaged in un ciclo
     double sum_cycle=0.0; // somm delle medie dei tempi damaged tra i vari cicli
     double double_sum_cycle =0;
     int cycle_count=0; // quanti cicli sono stati fatti
 
-    double secondInterArrival = 0;
-    double secondService = 0;
-    double secondWaiting =0;
-    double secondCustNum = 0;
-    double secondDelay = 0;
-    double doubleWaiting = 0;
-
-
     File   fp;
     Scanner scan;
 
     /* create a new istance of random number geneartor */
     Rngs r = new Rngs();
-
-    /* set variable for negative exponential random variate */
-    double lambda = 90;
-    double mi = 15;
 
 
     /* Definition of the type used to specify the header of a queue*/
@@ -262,7 +217,6 @@ public class NESssq{
             printState = true;
         }
 
-
         initialize();
         while (!(halt)) 
             engine(); 
@@ -271,17 +225,15 @@ public class NESssq{
 
     public void engine(){
         int event_type;
-        double  oldclock;
         node new_event;
         
         /* Get the first event notice from Future Event List */
         new_event = event_pop();
         
-        oldclock = clock;
         /* update clock */
         clock = new_event.event.occur_time;
         
-        if(event_counter<30){
+        if(event_counter<30){ // for the first 30 events prints the system state
             printState(new_event);
         }
 
@@ -290,7 +242,7 @@ public class NESssq{
         switch(event_type){
             case FAILED : test_fix(new_event); 
             break;
-            case REPAIRED : repaired(new_event); // sarebbe la departure di prima
+            case REPAIRED : repaired(new_event); 
             break;
             case SERVICED : test_fix(new_event); 
             break;
@@ -319,58 +271,45 @@ public class NESssq{
         System.out.println("NUmber of customer at Spare Parts station: "+nSpare);
     }
 
-    public void nextTextFix(){
-        if(nServiced>0){ // priorità ai serviced
-            //nServiced--;
-            //nTestFix--;
+    /* choose next customer on test/fix station */
+    public void nextTestFix(){
+        if(nServiced>0){ // priority to serviced
             node next_job =dequeue(serviced);
             exit_serviced(next_job);
         }else if(nFailed>0){ 
-            //nFailed--;
-            //nTestFix--;
             node next_job = dequeue(failed);
             exit_failed(next_job);
         }
         /* 
-        if(nFailed>0){ // la precedenza è sui failed 
-            //nFailed--;
-            //nTestFix--;
+        if(nFailed>0){ // priority to failed
             node next_job = dequeue(failed);
             exit_failed(next_job);
         }else if(nServiced>0){
-            //nServiced--;
-            //nTestFix--;
             node next_job =dequeue(serviced);
             exit_serviced(next_job);
         }*/
     }
 
+    /* choose next customer on repair station */
     public void nextRepair(){
-        if(nDamaged>0){ // priorità ai damaged
-            //nDamaged--;
-            //nRepair--;
+        if(nDamaged>0){ // priority to damaged
             node next_job = dequeue(damaged);
             exit_damaged(next_job);
         }else if(nFaulty>0){
-            //nFaulty--;
-            //nRepair--;
             node next_job = dequeue(faulty);
             exit_faulty(next_job);
         }
         /* 
-        if(nFaulty>0){ // priorità ai faulty
-            //nFaulty--;
-            //nRepair--;
+        if(nFaulty>0){ // priority to faulty
             node next_job = dequeue(faulty);
             exit_faulty(next_job);
         }else if(nDamaged>0){
-            //nDamaged--;
-            //nRepair--;
             node next_job = dequeue(damaged);
             exit_damaged(next_job);
         }*/
     }
 
+    /* last event before dalay station */
     public void repaired(node item){
         if(item.event.previous_type==FAILED || item.event.previous_type==SERVICED){
             nTestFix--;
@@ -380,11 +319,8 @@ public class NESssq{
                 damaged_count++;
                 double damaged_tim = clock-item.event.damaged_time;
                 sum_damaged+= damaged_tim;
-
-                rep_sum += item.event.repair_time;
-                //damaged_times.add(damaged_tim);
             } 
-            nextTextFix();
+            nextTestFix();
         }else if(item.event.previous_type==FAULTY){
             nRepair--;
             nFaulty--;
@@ -392,7 +328,7 @@ public class NESssq{
         }
         if(item.event.tagged==true){
             if(nFailed==0&&nDamaged==0){ // regeneration point founded
-                if(damaged_count!=0){
+                if(damaged_count!=0){ // if there are damaged items
                     regenerate();
                 }
             }
@@ -408,14 +344,14 @@ public class NESssq{
         double left_limit, right_limit;
         double precision;
         double tstar = 1.645;
-        sum_cycle += sum_damaged/damaged_count; // media del tempo da trovare in un ciclo
+        sum_cycle += sum_damaged/damaged_count; // mean time in a cycle
         double_sum_cycle += Math.pow(sum_damaged/damaged_count, 2);
         cycle_count++;
 
         if(cycle_count==1) return;
 
         double mean_cycle, double_mean_cycle;
-        mean_cycle = sum_cycle/cycle_count;
+        mean_cycle = sum_cycle/cycle_count; // mean time in all cycles
         double_mean_cycle = double_sum_cycle/cycle_count;
 
         double var_mean_cycle = (cycle_count/(cycle_count-1))*double_mean_cycle-Math.pow(mean_cycle, 2);
@@ -440,17 +376,18 @@ public class NESssq{
         r.plantSeeds(newSeed);
     }
 
+    // exit damaged queue
     public void exit_damaged(node item){
         item.event.previous_type = DAMAGED_REPAIR;
         double test = GetBernoulli(qp23);
         if(test==1){
-            //caso spare-parts
+            //spare-parts case
             item.event.type= DAMAGED_SPARE;
             item.event.occur_time = clock + GetHyperExp(0.95, 0.05, 60, 2860);
             //item.event.occur_time = clock + GetNegExp(200);
             schedule(item);
         }else{
-            // caso serviced
+            // serviced case
             item.event.type= SERVICED;
             item.event.occur_time = clock + GetHyperExp(0.95, 0.05, 60, 2860);
             //item.event.occur_time = clock + GetNegExp(200);
@@ -458,23 +395,24 @@ public class NESssq{
         }
     }
 
-    public void exit_failed(node item){ ////////////////////////////
+    // exit failed queue
+    public void exit_failed(node item){ 
         item.event.previous_type = FAILED;
         double test = GetBernoulli(q10);
         if(test == 1){
-            //caso repaired
+            // repaired case
             item.event.type = REPAIRED;
             item.event.occur_time = clock + GetUniform(3, 7);
             schedule(item);
         }else{
             test = GetBernoulli(qs12);
             if(test == 0){
-                // caso faulty
+                // faulty case
                 item.event.type = FAULTY;
                 item.event.occur_time = clock + GetUniform(3, 7);
                 schedule(item);
             }else{
-                // caso damaged
+                // damaged case
                 item.event.type = DAMAGED_REPAIR;
                 item.event.occur_time = clock + GetUniform(3, 7);
                 schedule(item);
@@ -482,22 +420,24 @@ public class NESssq{
         }
     }
 
+    // exit serviced queue
     public void exit_serviced(node item){
         item.event.previous_type = SERVICED;
         double test = GetBernoulli(qp10);
         if(test==1){
-            // caso repaired
+            // repaired case
             item.event.type = REPAIRED;
             item.event.occur_time = clock + GetNegExp(Sp1);
             schedule(item);
         }else{
-            // caso damaged
+            // damaged case
             item.event.type = DAMAGED_REPAIR;
             item.event.occur_time = clock + GetNegExp(Sp1);
             schedule(item);
         }
     }
 
+    // exit faulty queue
     public void exit_faulty(node item){
         item.event.previous_type = FAULTY;
         item.event.type = REPAIRED;
@@ -505,28 +445,25 @@ public class NESssq{
         schedule(item);
     }
 
+    // repair station
     public void repair(node item){
-        // libero le code precendenti
+        // free the previous station
         if(item.event.previous_type==FAILED || item.event.previous_type==SERVICED){
             nTestFix--;
             if(item.event.previous_type==FAILED){
                 nFailed--;
-                //item.event.damaged_time=clock;
             } 
             else nServiced--;
-            nextTextFix();
+            nextTestFix();
         }else if(item.event.previous_type==DAMAGED_SPARE){
             nSpare--;
             // next spare parts
             if(nSpare>0){
-                //nSpare--;
                 node next_job = dequeue(spareParts);
                 exit_spare(next_job);
             }
         }
 
-        //inserisco nella stazione attuale: la repair
-        item.event.repair_time=clock;
         nRepair++;
 
         if(nRepair==1){ // empty server
@@ -544,7 +481,7 @@ public class NESssq{
                 item.event.occur_time = 0.0;
                 enqueue(item, faulty);
             }else if(item.event.type==DAMAGED_REPAIR){
-                item.event.damaged_time=clock;
+                item.event.damaged_time=clock; // save the time of the damage
                 nDamaged++;
                 item.event.occur_time = 0.0;
                 enqueue(item, damaged);
@@ -553,6 +490,7 @@ public class NESssq{
 
     }
 
+    // extit spare parts queue
     public void exit_spare(node item){
         item.event.previous_type = DAMAGED_SPARE;
         item.event.type = DAMAGED_REPAIR;
@@ -561,6 +499,7 @@ public class NESssq{
         schedule(item);
     }
 
+    // spare parts queue
     public void spare_parts(node item){
         nRepair--;
         nDamaged--;
@@ -579,9 +518,11 @@ public class NESssq{
         }
     }
 
+    // test and fix station
     public void test_fix(node item){ 
         item.event.arrival_time = clock;
 
+        // free the previous station
         if(item.event.previous_type==DAMAGED_REPAIR){
             nRepair--;
             nDamaged--;
@@ -589,25 +530,19 @@ public class NESssq{
         }
         nTestFix++;
         
-        if (nTestFix == 1){
-            /* Process arrival at empty server and the work-shift period is not over yet*/
+        if (nTestFix == 1){ // empty server
           
             if (item.event.type==FAILED){ 
                 nFailed++;
                 exit_failed(item);
             }else if(item.event.type==SERVICED){
                 nServiced++;  
-                item.event.repair_time = clock- item.event.repair_time;
-                rep++;
                 exit_serviced(item); 
             }
-        }else{
-            /* Process arrival at busy server */
+        }else{ // busy server
             if(item.event.type==SERVICED){
                 nServiced++;
                 item.event.occur_time = 0.0;
-                item.event.repair_time = clock- item.event.repair_time;
-                rep++;
                 enqueue(item, serviced);
             }else if (item.event.type==FAILED){
                 nFailed++;
@@ -656,10 +591,6 @@ public class NESssq{
         AL.Tail = null;
         
         /* Basic Statistic Measures  */
-        nsys     = 0;
-        narr     = 0;
-        ncom     = 0;
-        ndelayed = 0;
         clock    = 0.0;
         nFailed= 0;
         nServiced = 0;
@@ -717,8 +648,6 @@ public class NESssq{
     {   
         r.selectStream(1);
         double random =r.negExp(Z);
-        sumInterarrival = sumInterarrival+ random;
-        secondInterArrival = Math.pow(random, 2)+secondInterArrival;
         return random;
     }
 

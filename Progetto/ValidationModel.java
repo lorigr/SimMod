@@ -13,10 +13,6 @@ public class ValidationModel{
     static final int DAMAGED_REPAIR = 5;
     static final int DAMAGED_SPARE = 6;
 
-
-    
-    int EVENT_NUMBER = 50;
-
     double Z = 2500;
     double S1 = 5;
     double S2 = 50;
@@ -30,37 +26,17 @@ public class ValidationModel{
     double qp12 = 0.1;
     double qp23 = 0.3;
     double qp21 = 0.7;
-    
 
-
-    double Start;            /* Beginning of Observation Period */
-    double Stop;             /* End of Observation Period */
-    double ObsPeriod;        /* Length of the Observation Period */
     double clock;            /* Clock of the simulator - Simulation time */ 
     double lastclock;        /* Time of last processed event */
-    double End_time;         /* Maximum simulation time */
 
     double inter_arrival_t;  /* inter arrival time read from trace file*/
     double arrival_t;        /* time of arrival */
     double service_t;        /* service time read from trace file*/
 
-    double sumService = 0;      /* sum of service time */
-    double sumInterarrival=0;  /* sum of the interarrival time*/
-    double sumDelay = 0;
-    double area = 0;
-    int inService=0;
-    double maxDelay = 0;
-    double busy = 0;
-    double doubleBusy = 0;
-    double sumWaiting = 0;
-
-    double rep_sum = 0;
-    int rep = 0;
-
     double damaged_test = 0;
 
     boolean halt;            /* End of simulation flag */
-    int nsys;                /* Number of customers in system */
     int nTestFix;            /* Number of customers in Test/fix station */
     int nRepair;             /* Number of customers in Repair station */
     int nSpare;              /* Number of customers in Spare-parts station */
@@ -68,9 +44,6 @@ public class ValidationModel{
     int nServiced;
     int nFaulty;
     int nDamaged;
-    int narr;                /* Number of Arrivals */
-    int ncom;                /* Number of Completions */
-    int ndelayed;            /* Number of Delayed Customers */
 
     int event_counter;       /* Number events processed by the simulator*/
     int number_of_nodes;     /* Number of memory blocks used for the simulation */
@@ -82,14 +55,6 @@ public class ValidationModel{
     int job_number;    /* (progressive) Job identification number */
     int node_number;   /* progressive number used to identify the newly generated node*/
 
-    int N = 10;
-
-    boolean endFlag = false;
-    boolean customerInService = false;
-    int nQueue = 0;
-    double [] res = new double[5];
-
-    ArrayList<Double> damaged_times = new ArrayList<Double>();
     double sum_damaged = 0.0; // somma dei tempi damaged dentro un regeneration cycle
     double sum_faulty = 0.0; // somma dei tempi faulty dentro un regeneration cycle
     int damaged_count=0; // quante volte è stato raccolto il dato del tempo damaged in un ciclo
@@ -112,11 +77,6 @@ public class ValidationModel{
 
     /* create a new istance of random number geneartor */
     Rngs r = new Rngs();
-
-    /* set variable for negative exponential random variate */
-    double lambda = 90;
-    double mi = 15;
-
 
     /* Definition of the type used to specify the header of a queue*/
     public class dll{
@@ -167,8 +127,6 @@ public class ValidationModel{
             event = new event_notice();
         }
     }
-
-
 
     public void enqueue(node item, dll dl_list){
     /* function to add an element at the tail of a generic queue (dl_list) */    
@@ -277,7 +235,6 @@ public class ValidationModel{
     public void engine(){ 
         int event_type;
         double  oldclock;
-        double  interval;
         node new_event;
         
         /* Get the first event notice from Future Event List */
@@ -286,13 +243,6 @@ public class ValidationModel{
         oldclock = clock;
         /* update clock */
         clock = new_event.event.occur_time;
-        interval=clock-oldclock;
-        
-        if(nsys>0){
-            area = area + interval*nsys;
-            secondCustNum = secondCustNum + Math.pow(nsys, 2)*interval;
-            busy = busy+interval;
-        }
 
         /* Identify and process current event */
         event_type = new_event.event.type;
@@ -314,23 +264,8 @@ public class ValidationModel{
         lastclock = clock;
     }
 
-    public void nextTextFix(){
-        if(nFailed>0){ // la precedenza è sui failed 
-            //nFailed--;
-            //nTestFix--;
-            node next_job = dequeue(failed);
-            exit_failed(next_job);
-        }else if(nServiced>0){
-            //nServiced--;
-            //nTestFix--;
-            node next_job =dequeue(serviced);
-            exit_serviced(next_job);
-        }
-    }
-
     public void nextServiced(){
         if(nServiced>0){
-
             node next_job =dequeue(serviced);
             exit_serviced(next_job);
         }
@@ -343,24 +278,8 @@ public class ValidationModel{
         }
     }
 
-    public void nextRepair(){
-        if(nFaulty>0){ // priorità ai faulty
-            //nFaulty--;
-            //nRepair--;
-            node next_job = dequeue(faulty);
-            exit_faulty(next_job);
-        }else if(nDamaged>0){
-            //nDamaged--;
-            //nRepair--;
-            node next_job = dequeue(damaged);
-            exit_damaged(next_job);
-        }
-    }
-
     public void nextDamaged(){
         if(nDamaged>0){
-            //nDamaged--;
-            //nRepair--;
             node next_job = dequeue(damaged);
             exit_damaged(next_job);
         }
@@ -368,13 +287,12 @@ public class ValidationModel{
 
     public void nextFaulty(){
         if(nFaulty>0){ 
-            //nFaulty--;
-            //nRepair--;
             node next_job = dequeue(faulty);
             exit_faulty(next_job);
         }
     }
 
+    // last event before delay station
     public void repaired(node item){
         if(item.event.previous_type==FAILED || item.event.previous_type==SERVICED){
             nTestFix--;
@@ -387,11 +305,8 @@ public class ValidationModel{
                 damaged_count++;
                 double damaged_tim = clock-item.event.damaged_time;
                 sum_damaged+= damaged_tim;
-
-                rep_sum += item.event.repair_time;
                 nextServiced();
             } 
-            //nextTextFix();
         }else if(item.event.previous_type==FAULTY){
             faulty_count++;
             item.event.faulty_time = clock - item.event.faulty_time;
@@ -402,13 +317,13 @@ public class ValidationModel{
         }
         if(item.event.tagged==true){
             if(nFailed==0&&nDamaged==0){ // regeneration point founded
-                if(test==true){
-                    if(damaged_count!=0){
-                    regenerate();
+                if(test==true){ // choose to collect statistics of damaged machines
+                    if(damaged_count!=0){ // if there are damaged machines
+                        regenerate();
                     }
                 }else{
-                    if(faulty_count!=0){
-                    regenerate();
+                    if(faulty_count!=0){ // if there are faulty machines
+                        regenerate();
                     }
                 }
                 
@@ -427,7 +342,7 @@ public class ValidationModel{
         double tstar = 1.645;
 
         if(test==true){
-            sum_cycle += sum_damaged/damaged_count; 
+            sum_cycle += sum_damaged/damaged_count;  // mean time in a cycle
             double_sum_cycle += Math.pow(sum_damaged/damaged_count, 2);
         }else{
             sum_cycle += sum_faulty/faulty_count;
@@ -435,12 +350,10 @@ public class ValidationModel{
         }
         
         cycle_count++;
-
-        //System.out.println(rep_sum/rep);
         if(cycle_count==1) return;
 
         double mean_cycle, double_mean_cycle;
-        mean_cycle = sum_cycle/cycle_count;
+        mean_cycle = sum_cycle/cycle_count; // mean time in all cycles
         double_mean_cycle = double_sum_cycle/cycle_count;
 
         double var_mean_cycle = (cycle_count/(cycle_count-1))*double_mean_cycle-Math.pow(mean_cycle, 2);
@@ -448,13 +361,12 @@ public class ValidationModel{
         left_limit = ((mean_cycle)-((tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count))));
         right_limit = ((mean_cycle)+((tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count))));
         precision = (tstar*stDev_mean_cycle)/(Math.sqrt(cycle_count)*mean_cycle);
-        //System.out.println("left limit: "+left_limit+" right limit: "+right_limit+" precision: "+precision);
         if(test==false){
-            if(left_limit<=60&&right_limit>60){
+            if(left_limit<=60&&right_limit>60){ // thoretical value of faulty machines
                 damaged_test++;
             }
         }else{
-            if(left_limit<=460&&right_limit>460){
+            if(left_limit<=460&&right_limit>460){ // thoretical value of damaged machines
                 damaged_test++;
             }
         }
@@ -467,39 +379,36 @@ public class ValidationModel{
         r.plantSeeds(newSeed);
     }
 
+    // exit damaged queue
     public void exit_damaged(node item){
         item.event.previous_type = DAMAGED_REPAIR;
         double test = GetBernoulli(qp23);
         if(test==1){
-            //caso spare-parts
             item.event.type= DAMAGED_SPARE;
             item.event.occur_time = clock + GetNegExp(200);
             schedule(item);
         }else{
-            // caso serviced
             item.event.type= SERVICED;
             item.event.occur_time = clock + GetNegExp(200);
             schedule(item);
         }
     }
 
-    public void exit_failed(node item){ ////////////////////////////
+    // exit failed queue
+    public void exit_failed(node item){ 
         item.event.previous_type = FAILED;
         double test = GetBernoulli(q10);
         if(test == 1){
-            //caso repaired
             item.event.type = REPAIRED;
             item.event.occur_time = clock + GetNegExp(5);
             schedule(item);
         }else{
             test = GetBernoulli(qs12);
             if(test == 0){
-                // caso faulty
                 item.event.type = FAULTY;
                 item.event.occur_time = clock + GetNegExp(5);
                 schedule(item);
             }else{
-                // caso damaged
                 item.event.type = DAMAGED_REPAIR;
                 item.event.occur_time = clock + GetNegExp(5);
                 schedule(item);
@@ -507,22 +416,22 @@ public class ValidationModel{
         }
     }
 
+    // exit serviced queue
     public void exit_serviced(node item){
         item.event.previous_type = SERVICED;
         double test = GetBernoulli(qp10);
         if(test==1){
-            // caso repaired
             item.event.type = REPAIRED;
             item.event.occur_time = clock + GetNegExp(Sp1);
             schedule(item);
         }else{
-            // caso damaged
             item.event.type = DAMAGED_REPAIR;
             item.event.occur_time = clock + GetNegExp(Sp1);
             schedule(item);
         }
     }
 
+    // exit faulty queue
     public void exit_faulty(node item){
         item.event.previous_type = FAULTY;
         item.event.type = REPAIRED;
@@ -530,44 +439,40 @@ public class ValidationModel{
         schedule(item);
     }
 
+    // repair station
     public void repair(node item){
-        // libero le code precendenti
+        // free previous station
         if(item.event.previous_type==FAILED || item.event.previous_type==SERVICED){
             nTestFix--;
             if(item.event.previous_type==FAILED){
                 nFailed--;
-                //item.event.damaged_time=clock;
                 nextFailed();
             } 
             else{
                 nServiced--;
                 nextServiced();
             } 
-            //nextTextFix();
         }else if(item.event.previous_type==DAMAGED_SPARE){
             nSpare--;
             // next spare parts
             if(nSpare>0){
-                //nSpare--;
                 node next_job = dequeue(spareParts);
                 exit_spare(next_job);
             }
         }
 
-        //inserisco nella stazione attuale: la repair
-        item.event.repair_time=clock;
         nRepair++;
 
-        if(item.event.type==FAULTY){
+        if(item.event.type==FAULTY){ // faulty machine
             item.event.faulty_time=clock;
             nFaulty++;
-            if(nFaulty==1){
+            if(nFaulty==1){ // empty queue
                 exit_faulty(item);
-            }else{
+            }else{ // busy queue
                 item.event.occur_time=0.0;
                 enqueue(item, faulty);
             }
-        }else if(item.event.type==DAMAGED_REPAIR){
+        }else if(item.event.type==DAMAGED_REPAIR){ // damaged machine
             item.event.damaged_time=clock;
             nDamaged++;
             if(nDamaged==1){
@@ -580,6 +485,7 @@ public class ValidationModel{
 
     }
 
+    // extit spare parts queue
     public void exit_spare(node item){
         item.event.previous_type = DAMAGED_SPARE;
         item.event.type = DAMAGED_REPAIR;
@@ -588,6 +494,7 @@ public class ValidationModel{
         schedule(item);
     }
 
+    // spare parts queue
     public void spare_parts(node item){
         nRepair--;
         nDamaged--;
@@ -595,9 +502,6 @@ public class ValidationModel{
 
         item.event.spare_parts_time = clock;
         nSpare++;
-
-        item.event.repair_time = clock - item.event.repair_time;
-        rep++;
 
         if(nSpare==1){
             exit_spare(item);
@@ -607,9 +511,11 @@ public class ValidationModel{
         }
     }
 
+    // test and fix station
     public void test_fix(node item){ 
         item.event.arrival_time = clock;
 
+        // free the previous station
         if(item.event.previous_type==DAMAGED_REPAIR){
             nRepair--;
             nDamaged--;
@@ -617,18 +523,16 @@ public class ValidationModel{
         }
         nTestFix++;
 
-        if(item.event.type==FAILED){
+        if(item.event.type==FAILED){ // failed machine
             nFailed++;
-            if(nFailed==1){
+            if(nFailed==1){ // empty queue
                 exit_failed(item);
-            }else{
+            }else{ // busy queue
                 item.event.occur_time=0.0;
                 enqueue(item, failed);
             }
-        }else if(item.event.type==SERVICED){
+        }else if(item.event.type==SERVICED){ // serviced machine
             nServiced++;
-            item.event.repair_time = clock - item.event.repair_time;
-            rep++;
             if(nServiced==1){
                 exit_serviced(item);
             }else{
@@ -677,10 +581,6 @@ public class ValidationModel{
         AL.Tail = null;
         
         /* Basic Statistic Measures  */
-        nsys     = 0;
-        narr     = 0;
-        ncom     = 0;
-        ndelayed = 0;
         clock    = 0.0;
         nFailed= 0;
         nServiced = 0;
@@ -703,7 +603,7 @@ public class ValidationModel{
     public void planNewFailure(boolean tag){
         inter_arrival_t = GetInterArrival();
         arrival_t = clock + inter_arrival_t;
-        service_t = GetUniform(3, 7); // potrebe non servire
+        service_t = GetUniform(3, 7);
 
         node newNode = get_new_node();
         newNode.event.name = "J" + (job_number++);   
@@ -749,8 +649,6 @@ public class ValidationModel{
     {   
         r.selectStream(1);
         double random =r.negExp(Z);
-        sumInterarrival = sumInterarrival+ random;
-        secondInterArrival = Math.pow(random, 2)+secondInterArrival;
         return random;
     }
 
