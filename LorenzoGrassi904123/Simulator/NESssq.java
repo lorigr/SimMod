@@ -273,6 +273,7 @@ public class NESssq{
 
     /* choose next customer on test/fix station */
     public void nextTestFix(){
+        /* 
         if(nServiced>0){ // priority to serviced
             node next_job =dequeue(serviced);
             exit_serviced(next_job);
@@ -280,18 +281,20 @@ public class NESssq{
             node next_job = dequeue(failed);
             exit_failed(next_job);
         }
-        /* 
+        */
+    
         if(nFailed>0){ // priority to failed
             node next_job = dequeue(failed);
             exit_failed(next_job);
         }else if(nServiced>0){
             node next_job =dequeue(serviced);
             exit_serviced(next_job);
-        }*/
+        }
     }
 
     /* choose next customer on repair station */
     public void nextRepair(){
+        /*
         if(nDamaged>0){ // priority to damaged
             node next_job = dequeue(damaged);
             exit_damaged(next_job);
@@ -299,14 +302,15 @@ public class NESssq{
             node next_job = dequeue(faulty);
             exit_faulty(next_job);
         }
-        /* 
+        */
+        
         if(nFaulty>0){ // priority to faulty
             node next_job = dequeue(faulty);
             exit_faulty(next_job);
         }else if(nDamaged>0){
             node next_job = dequeue(damaged);
             exit_damaged(next_job);
-        }*/
+        }
     }
 
     /* last event before dalay station */

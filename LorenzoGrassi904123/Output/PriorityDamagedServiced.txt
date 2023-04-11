@@ -1,0 +1,337 @@
+Do you you want to print the state of the system after each regeneration cycle? (y/n)n
+--------------------------------------------------
+Event number: 0
+Event type: 0
+Clock: 128.32274091792144
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 1
+Event type: 0
+Clock: 131.29968011199549
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 2
+Event type: 2
+Clock: 133.4906547190364
+Number of customer at Test/Fix station: 2
+Number of customer at Test queue: 2
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 3
+Event type: 2
+Clock: 139.8577483395635
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 4
+Event type: 1
+Clock: 157.483391997446
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 2
+Number of customer at short rapair station: 2
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 5
+Event type: 1
+Clock: 180.42129159754347
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 6
+Event type: 0
+Clock: 201.16726292361167
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 7
+Event type: 2
+Clock: 206.39920206535825
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 8
+Event type: 1
+Clock: 235.0614252595332
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 9
+Event type: 0
+Clock: 293.0314299898088
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 10
+Event type: 2
+Clock: 299.1697431543421
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 11
+Event type: 1
+Clock: 445.9975200841504
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 12
+Event type: 0
+Clock: 523.6558858424272
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 13
+Event type: 2
+Clock: 529.8861347440618
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 14
+Event type: 0
+Clock: 532.234713178152
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 15
+Event type: 5
+Clock: 538.5794439815899
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 16
+Event type: 0
+Clock: 543.4540276129154
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 2
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 1
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 17
+Event type: 1
+Clock: 547.954640362401
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 2
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 1
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 18
+Event type: 1
+Clock: 548.6859304741068
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 2
+Number of customer at short rapair station: 1
+Number of customer at long Repair station: 1
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 19
+Event type: 4
+Clock: 568.5267126826934
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 1
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 20
+Event type: 1
+Clock: 577.1220209144567
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 0
+Number of customer at Test queue:  1
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 21
+Event type: 0
+Clock: 646.0579895319246
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 22
+Event type: 5
+Clock: 652.643348972848
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 23
+Event type: 0
+Clock: 703.7922587765438
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 1
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 24
+Event type: 5
+Clock: 707.6778315885448
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 1
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 25
+Event type: 4
+Clock: 733.4285112883038
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 2
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 2
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 26
+Event type: 6
+Clock: 733.4736323885733
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 0
+Number of customer at Test queue:  1
+Number of customer at Repair station: 1
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 1
+NUmber of customer at Spare Parts station: 0
+--------------------------------------------------
+Event number: 27
+Event type: 1
+Clock: 737.0353429155342
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 0
+Number of customer at Test queue:  1
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 1
+--------------------------------------------------
+Event number: 28
+Event type: 0
+Clock: 827.238672476696
+Number of customer at Test/Fix station: 0
+Number of customer at Test queue: 0
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 1
+--------------------------------------------------
+Event number: 29
+Event type: 0
+Clock: 829.8386430290157
+Number of customer at Test/Fix station: 1
+Number of customer at Test queue: 1
+Number of customer at Test queue:  0
+Number of customer at Repair station: 0
+Number of customer at short rapair station: 0
+Number of customer at long Repair station: 0
+NUmber of customer at Spare Parts station: 1
+-----------------------------------------
+Interval of average total repair time of damaged machines:
+
+left limit: 627.7338107878791, right limit: 693.8040559193616
+reached precision: 4.999496934287926%, after: 3884 cycles
+-----------------------------------------
